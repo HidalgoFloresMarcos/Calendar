@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <!-- LinearLayout horizontal para lunes, martes, miércoles -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/lunes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:backgroundTint="@color/primary_color"
+            android:padding="16dp"
+            android:text="Lunes"
+            android:textColor="@android:color/white" />
+
+        <Button
+            android:id="@+id/martes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Martes"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/primary_color"
+            android:layout_margin="8dp"
+            android:padding="16dp" />
+
+        <Button
+            android:id="@+id/miercoles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Miércoles"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/primary_color"
+            android:layout_margin="8dp"
+            android:padding="16dp" />
+    </LinearLayout>
+
+    <!-- LinearLayout horizontal para jueves, viernes -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/jueves"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jueves"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/primary_color"
+            android:layout_margin="8dp"
+            android:padding="16dp" />
+
+        <Button
+            android:id="@+id/viernes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Viernes"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/primary_color"
+            android:layout_margin="8dp"
+            android:padding="16dp" />
+    </LinearLayout>
+
+    <!-- LinearLayout horizontal para sábado, domingo -->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/sabado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sábado"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/primary_color"
+            android:layout_margin="8dp"
+            android:padding="16dp" />
+
+        <Button
+            android:id="@+id/domingo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Domingo"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/primary_color"
+            android:layout_margin="8dp"
+            android:padding="16dp" />
+    </LinearLayout>
+
+    <!-- TextView para el título dinámico -->
+    <TextView
+        android:id="@+id/tvTituloEventos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Eventos del Día"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:padding="8dp"  />
+
+    <!-- RecyclerView para mostrar los eventos -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="8dp"
+        android:padding="8dp"
+        android:background="@android:color/white" />
+
+    <!-- Botón de micrófono en la parte inferior centrado -->
+    <Button
+        android:id="@+id/microphone_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🎤"
+        android:textSize="24sp"
+        android:backgroundTint="@color/primary_color"
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp" />
+</LinearLayout>
